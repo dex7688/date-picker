@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="./App.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Date Picker</h1>
+      <input
+        class="selectDate"
+        type="text"
+        readonly
+        placeholder="Select date"
+      />
+      <div class="calendar">
+        <div class="calendar-nav">
+          <div class="inner">
+            <span class="prev material-icons"> arrow_left </span>
+
+            <div class="contents">
+              <div class="month"></div>
+              <div class="year"></div>
+            </div>
+
+            <span class="next material-icons"> arrow_right </span>
+          </div>
+        </div>
+        <div class="calendar-grid">
+          <div class="week">
+            <div class="day">SUN</div>
+            <div class="day">MON</div>
+            <div class="day">TUE</div>
+            <div class="day">WED</div>
+            <div class="day">THU</div>
+            <div class="day">FRI</div>
+            <div class="day">SAT</div>
+          </div>
+          <div class="items"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
